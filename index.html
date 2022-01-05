@@ -21,26 +21,28 @@
     </header>
     <form action="results.html" method="get">
         <div>
-            <label for="FirstName">First Name</label>
-            <input type="text">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" id="firstname" placeholder="What is your first name?"> 
         </div>
         <div>
-            <label for="">Last Name</label>
-            <input type="text">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" placeholder="WHat is your last name">
         </div>
         <div>
             <label for="">E-mail</label>
-            <input type="email" name="" id="">
+            <input type="email" name="email" id="email" placeholder="Your active email">
         </div>
         <div>
-            <label for="">Phone Number</label>
-            <input type="text">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" id="phone" placeholder="A whatsapp-enabled phone line">
         </div>
         <div>
-        <label for="">Choose Appointment Date</label>
-        <input type="datetime-local" name="" id="">
+            <label for="datetime">Choose Appointment Date</label>
+            <input type="datetime-local" name="datetime" id="datetime">
         </div>
-        <button>Submit</button>
+        <div><button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
     </form>
 </body>
 
