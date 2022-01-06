@@ -23,37 +23,38 @@
             enctype="multipart/form-data">
             <div>
                 <label for="firstname">First Name</label>
-                <input type="text" name="firstname" id="firstname" placeholder="What is your first name?" required>
+                <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="text" name="firstname" id="firstname" placeholder="What is your first name?" required>
             </div>
             <div>
                 <label for="lastname">Last Name</label>
-                <input type="text" name="lastname" id="lastname" placeholder="What is your last name?" required>
+                <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="text"
+                    name="lastname" id="lastname" placeholder="What is your last name?" required>
             </div>
             <div>
                 <label for="">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Your active email">
+                <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="email"
+                    name="email" id="email" placeholder="Your active email">
             </div>
             <div>
                 <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone" placeholder="A whatsapp-enabled phone line" required>
+                <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="tel"
+                    name="phone" id="phone" placeholder="A whatsapp-enabled phone line" required>
             </div>
-            <div>Gender</div>
-            <div>
+            <div>Gender:
                 <label for="male">Male</label>
                 <input type="radio" name="gender" id="male" value="male">
-            </div>
-            <div>
+
                 <label for="male">Female</label>
                 <input type="radio" name="gender" id="female" value="female">
-            </div>
-            <div>
+
                 <label for="other">Other</label>
                 <input type="radio" name="gender" id="other" value="other">
             </div>
-            <div>
-                <label for="complaint">Complaint</label>
-                <textarea name="complaint" id="complaint" cols="30" rows="10"></textarea>
-            </div>
+
+            <div></div>Complaint:
+            <label for="complaint"></label>
+            <textarea name="complaint" id="complaint" cols="30" rows="10"></textarea>
+
             <div>Upload picture of skin complaint</div>
             <div>
                 <input type="file" name="file" id="file">
@@ -65,9 +66,11 @@
 
             <div>
                 <label for="datetime">Choose Appointment Date</label>
-                <input type="datetime-local" name="datetime" id="datetime">
+                <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3"
+                    type="datetime-local" name="datetime" id="datetime">
             </div>
-            <div class="flex justify-center gap-8 p-4"><button class="rounded bg-lime-900 hover:bg-lime-500 text-white w-24" type="submit">Submit</button>
+            <div class="flex justify-center gap-8 p-4"><button
+                    class="rounded bg-lime-900 hover:bg-lime-500 text-white w-24" type="submit">Submit</button>
                 <button class="rounded bg-lime-900 hover:bg-lime-500 text-white w-24" type="reset">Reset</button>
             </div>
         </form>
