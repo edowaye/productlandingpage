@@ -9,7 +9,7 @@
     <title>Tessy's Skincare</title>
 </head>
 
-<body class="bg-lime-900 mx-auto">
+<body class="bg-lime-900 mx-auto p-8">
     <div>
         <h1
             class="flex justify-center my-8 text-4xl font-semibold text-amber-300 decoration-wavy leading-relaxed font-serif">
@@ -22,31 +22,38 @@
     <div class="flex container rounded-lg justify-center p-8 w-1/2 mx-auto bg-amber-300">
         <form class="flex flex-col text-yellow-900 font-serif font-semibold" action="results.html" method="get"
             enctype="multipart/form-data">
-            <div>
-                <!-- 1st row for Name-->
-                <label for="name">Name</label>
-                <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="text"
-                    name="name" id="name" placeholder="First" required>
-                <label for="lastname"></label>
-                <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="text"
-                    name="lastname" id="lastname" placeholder="Last" required>
+
+            <!--1st row for Name-->
+            <div class="grid grid-cols-4 gap-4">Name
+
+                <div>
+                    <label class="w-1/2" for="first"></label>
+                    <input class="px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="text"
+                        name="first" id="first"> </div>
+
+                <div>
+                    <label class="w-1/2" for="last"></label>
+                    <input class="px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="text"
+                        name="last" id="last"> </div>
+
             </div>
-            <!--End of row-->
+            <!--End of Name row-->
+
             <div>
-                <label for="">E-mail</label>
-                <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="email"
-                    name="email" id="email" placeholder="Your active email">
+                <label class="block" for="">E-mail</label>
+                <input class=" w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3"
+                    type="email" name="email" id="email" placeholder="Your active email">
             </div>
             <div>
-                <label for="phone">Phone Number</label>
-                <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="tel"
+                <label class="block" for="phone">Phone Number</label>
+                <input class="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="tel"
                     name="phone" id="phone" placeholder="A whatsapp-enabled line" required>
             </div>
             <div>Gender:
                 <label for="male">Male</label>
                 <input type="radio" name="gender" id="male" value="male">
 
-                <label for="male">Female</label>
+                <label for="female">Female</label>
                 <input type="radio" name="gender" id="female" value="female">
 
                 <label for="other">Other</label>
@@ -55,26 +62,32 @@
 
             <div></div>Complaint:
             <label for="complaint"></label>
-            <textarea name="complaint" id="complaint" cols="30" rows="10"></textarea>
+            <textarea class="border-gray-300 rounded-md mb-3" name="complaint" id="complaint" cols="30"
+                rows="10"></textarea>
 
             <div>Upload picture of skin complaint</div>
             <div>
-                <input type="file" name="file" id="file">
+                <input class="rounded-md mb-3" type="file" name="file" id="file">
             </div>
-            <div>
-                <label for="">Is this your first appointment?</label>
-                <input type="radio" name="" id="">
+
+            <div>Is this your first appointment?
+                <label for="Yes">Yes</label>
+                <input type="radio" name="first" id="yes" value="yes">
+                <label for="No">No</label>
+                <input type="radio" name="first" id="no" value="no">
             </div>
 
             <div>
                 <label for="datetime">Choose Appointment Date</label>
-                <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3"
+                <input class="w-full px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3"
                     type="datetime-local" name="datetime" id="datetime">
             </div>
+
             <div class="flex justify-center gap-8 p-4"><button
                     class="rounded bg-lime-900 hover:bg-lime-500 text-white w-24" type="submit">Submit</button>
                 <button class="rounded bg-lime-900 hover:bg-lime-500 text-white w-24" type="reset">Reset</button>
             </div>
+
         </form>
     </div>
 </body>
