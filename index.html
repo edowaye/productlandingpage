@@ -23,14 +23,15 @@
         <form class="flex flex-col text-yellow-900 font-serif font-semibold" action="results.html" method="get"
             enctype="multipart/form-data">
             <div>
-                <label for="firstname">First Name</label>
-                <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="text" name="firstname" id="firstname" placeholder="What is your first name?" required>
-            </div>
-            <div>
-                <label for="lastname">Last Name</label>
+                <!-- 1st row for Name-->
+                <label for="name">Name</label>
                 <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="text"
-                    name="lastname" id="lastname" placeholder="What is your last name?" required>
+                    name="name" id="name" placeholder="First" required>
+                <label for="lastname"></label>
+                <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="text"
+                    name="lastname" id="lastname" placeholder="Last" required>
             </div>
+            <!--End of row-->
             <div>
                 <label for="">E-mail</label>
                 <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="email"
@@ -39,7 +40,7 @@
             <div>
                 <label for="phone">Phone Number</label>
                 <input class="w-1/2 px-3 py-2 border border-gray-300 rounded-md placeholder-gray-400 mb-3" type="tel"
-                    name="phone" id="phone" placeholder="A whatsapp-enabled phone line" required>
+                    name="phone" id="phone" placeholder="A whatsapp-enabled line" required>
             </div>
             <div>Gender:
                 <label for="male">Male</label>
